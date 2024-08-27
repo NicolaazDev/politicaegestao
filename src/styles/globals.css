@@ -65,6 +65,10 @@
     /* background: #000000; */
   }
 
+  .hero-img {
+    zoom: 1.4 !important;
+  }
+
   .main-button {
     @apply bg-primary text-white h-[55px] px-5 py-2 rounded-md w-full;
   }
