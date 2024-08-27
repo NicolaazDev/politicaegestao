@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="center min-h-[115vh] bg-[#000000] relative overflow-hidden">
+    <section className="center min-h-[800px] bg-[#000000] relative overflow-hidden">
       <img
         ref={bgRef}
         src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/HAA76I2H2BNL7AIRHFPQYPPD7E.jpg?auth=29e80c8e39fa573d8a1522cbc7afe6d66f352d011465ddeb14b7fb0737638b75&width=1500&height=844"

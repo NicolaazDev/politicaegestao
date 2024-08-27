@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useFormContext } from "@/context/formContext";
@@ -6,6 +6,14 @@ import { useFormContext } from "@/context/formContext";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isRegister, toggleForm } = useFormContext();
+  const [scrollY, setScrollY] = useState(0);
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -19,8 +27,24 @@ const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
 
+  const handleScrollChange = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollChange);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollChange);
+    };
+  }, []);
+
   return (
-    <header className="bg-transparent absolute top-0 text-foreground w-full center h-[80px] px-4">
+    <header
+      className={`${
+        scrollY > 0 ? "bg-background" : "bg-transparent"
+      } fixed top-0 text-foreground w-full center h-[80px] px-4 z-30 duration-300`}
+    >
       <div className="center !justify-between max-w-screen-2xl w-full">
         <div className="sm:flex hidden">
           <button
@@ -31,10 +55,14 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        <nav className={`center space-x-6 text-white sm:hidden`}>
+        <nav
+          className={`center space-x-6 ${
+            scrollY > 0 ? "text-[#030303]" : "text-background"
+          } sm:hidden`}
+        >
           <a
             href="#inicio"
-            onClick={(e) => handleScroll(e, "features")}
+            onClick={(e) => scrollTop()}
             className="hover:border-b-background border border-solid border-transparent transition-all"
           >
             Inicio
@@ -86,6 +114,13 @@ const Header: React.FC = () => {
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.3 }}
           >
+            <a
+              href="#inicio"
+              onClick={(e) => scrollTop()}
+              className="hover:border-b-background border border-solid border-transparent transition-all"
+            >
+              Inicio
+            </a>
             <a
               href="#features"
               onClick={(e) => handleScroll(e, "features")}
