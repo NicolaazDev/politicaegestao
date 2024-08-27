@@ -4,6 +4,7 @@ import { Funcionalidades } from "@/components/funcionalidades";
 import Hero from "@/components/hero";
 import Stats from "@/components/stats";
 import Free from "@/components/free";
+import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Stats />
       <Funcionalidades />
       <Free />
+      <Contact />
     </main>
   );
 }

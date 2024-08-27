@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 
 const Stats: React.FC = () => {
   return (
-    <section className="w-full bg-transparent py-12 border border-transparent border-solid border-y-gray-300">
+    <section className="w-full bg-background z-[9999] relative py-12 border border-transparent border-solid border-y-gray-300">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-3 gap-8 text-center">
           <div className="bg-white p-2">

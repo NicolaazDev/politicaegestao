@@ -1,6 +1,6 @@
 export const Funcionalidades: React.FC = () => {
   return (
-    <section className="w-full bg-background">
+    <section className="w-full bg-background relative z-10 functionalidades-section">
       <div className="center !justify-between bg-secondary-foreground py-9">
         <div className="center !justify-between max-w-screen-2xl w-full mx-auto">
           <div className="center-col w-[40%] !justify-start">
@@ -14,7 +14,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724731482/imagem_2024-08-27_010440184_xiobgt.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767049/imagem_2024-08-27_105727336_med1qk.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover"
           />
@@ -33,7 +33,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724731482/imagem_2024-08-27_010440184_xiobgt.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767106/imagem_2024-08-27_105824475_sj2xfa.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover"
           />
@@ -52,7 +52,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724731482/imagem_2024-08-27_010440184_xiobgt.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767126/imagem_2024-08-27_105844290_ixie83.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover"
           />
@@ -71,7 +71,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724731482/imagem_2024-08-27_010440184_xiobgt.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767157/imagem_2024-08-27_105915628_mvcnq0.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover"
           />

@@ -4,28 +4,28 @@ const Header: React.FC = () => {
   return (
     <header className="bg-transparent absolute top-0 text-foreground w-full center h-[80px]">
       <div className="center !justify-between max-w-screen-2xl w-full">
-        <nav className="flex space-x-6 ">
+        <nav className="flex space-x-6 text-white">
           <a
             href="#home"
-            className="hover:border-b-foreground border border-solid border-transparent transition-all"
+            className="hover:border-b-background border border-solid border-transparent transition-all"
           >
             Início
           </a>
           <a
             href="#features"
-            className="hover:border-b-foreground border border-solid border-transparent transition-all"
+            className="hover:border-b-background border border-solid border-transparent transition-all"
           >
             Funcionalidades
           </a>
           <a
             href="#pricing"
-            className="hover:border-b-foreground border border-solid border-transparent transition-all"
+            className="hover:border-b-background border border-solid border-transparent transition-all"
           >
             Preços
           </a>
           <a
             href="#pricing"
-            className="hover:border-b-foreground border border-solid border-transparent transition-all"
+            className="hover:border-b-background border border-solid border-transparent transition-all"
           >
             Cadastre-se
           </a>

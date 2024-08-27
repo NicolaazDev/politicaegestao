@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "777 Bet",
-  description: "Best betting casine",
+  title: "Politica & Gestão",
+  description: "Software de gestão politica",
 };
 
 export default function RootLayout({

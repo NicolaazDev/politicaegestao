@@ -30,7 +30,7 @@ const LoginForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white p-3 mt-5 rounded-lg mx-auto w-[35%] max-w-[500px]">
+    <div className="bg-background p-7 mt-5 rounded-lg mx-auto w-[35%] max-w-[500px]">
       <h2 className="text-3xl font-bold mb-2 text-center">Faça seu login</h2>
       <p className="text-lg text-gray-600 mb-6 text-center">
         Bem-vindo de volta! Entre na sua conta para continuar.
