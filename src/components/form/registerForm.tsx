@@ -1,23 +1,29 @@
 "use client";
+
 import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-
-import { IoLogoGoogle, IoLogoFacebook } from "react-icons/io";
 import { useFormContext } from "@/context/formContext";
 
-const schema = z.object({
-  email: z.string().email("E-mail inválido").min(1, "E-mail é obrigatório"),
-  password: z
-    .string()
-    .min(6, "Senha deve ter pelo menos 6 caracteres")
-    .min(1, "Senha é obrigatória"),
-});
+const schema = z
+  .object({
+    email: z.string().email("E-mail inválido").min(1, "E-mail é obrigatório"),
+    password: z
+      .string()
+      .min(6, "Senha deve ter pelo menos 6 caracteres")
+      .min(1, "Senha é obrigatória"),
+    username: z.string().min(1, "Username é obrigatório"),
+    confirmPassword: z.string().min(1, "Confirmação de senha é obrigatória"),
+  })
+  .refine((data) => data.password === data.confirmPassword, {
+    message: "As senhas não coincidem",
+    path: ["confirmPassword"],
+  });
 
 type FormData = z.infer<typeof schema>;
 
-const LoginForm: React.FC = () => {
+const RegisterForm: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -35,12 +41,27 @@ const LoginForm: React.FC = () => {
   return (
     <div className="bg-background p-7 mt-5 rounded-lg mx-auto w-full max-w-[500px] sm:w-full">
       <h2 className="text-3xl font-poppinsRegular mb-2 text-center">
-        Faça seu login
+        Crie sua conta
       </h2>
       <p className="text-lg text-gray-600 mb-6 text-center">
-        Bem-vindo de volta! Entre na sua conta para continuar.
+        Bem-vindo! Crie sua conta para continuar.
       </p>
       <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="input-field">
+          <label htmlFor="username">Username</label>
+          <input
+            id="username"
+            type="text"
+            placeholder="username"
+            {...register("username")}
+            className={`mt-1 block w-full border-gray-300 rounded-md shadow-sm ${
+              errors.username ? "!border-red-500" : ""
+            }`}
+          />
+          {errors.username && (
+            <p className="error-label">{errors.username.message}</p>
+          )}
+        </div>
         <div className="input-field">
           <label htmlFor="email">E-mail</label>
           <input
@@ -64,51 +85,42 @@ const LoginForm: React.FC = () => {
             placeholder="********"
             {...register("password")}
             className={`mt-1 block w-full border-gray-300 rounded-md shadow-sm ${
-              errors.password ? "border-red-500" : ""
+              errors.password ? "!border-red-500" : ""
             }`}
           />
           {errors.password && (
             <p className="error-label">{errors.password.message}</p>
           )}
         </div>
-
-        <div className="flex items-center justify-between mb-4">
-          <a
-            href="#forgot-password"
-            className="text-sm text-blue-500 hover:underline"
-          >
-            Esqueci minha senha
-          </a>
+        <div className="input-field">
+          <label htmlFor="confirmPassword">Confirme a senha</label>
+          <input
+            id="confirmPassword"
+            type="password"
+            placeholder="********"
+            {...register("confirmPassword")}
+            className={`mt-1 block w-full border-gray-300 rounded-md shadow-sm ${
+              errors.confirmPassword ? "!border-red-500" : ""
+            }`}
+          />
+          {errors.confirmPassword && (
+            <p className="error-label">{errors.confirmPassword.message}</p>
+          )}
         </div>
 
-        <button type="submit" className="main-button">
-          Entrar
+        <button type="submit" className="main-button mt-4">
+          Registrar
         </button>
-
-        <div className="border-b bg-gray-300 w-full h-[1px] my-7 center">
-          <span className="px-4 text-gray-600 bg-background">ou</span>
-        </div>
-
-        <div className="my-4 text-center center !justify-between gap-x-2">
-          <button className="bg-red-600 h-[55px] hover:bg-red-700 transition-all w-full text-white font-bold py-2 px-4 rounded center space-x-2">
-            <IoLogoGoogle size={24} />
-            <span>Google</span>
-          </button>
-          <button className="bg-blue-600 h-[55px] hover:bg-blue-700 transition-all w-full text-white font-bold py-2 px-4 rounded center space-x-2">
-            <IoLogoFacebook size={24} />
-            <span>Facebook</span>
-          </button>
-        </div>
 
         <div className="text-center mt-4">
           <p className="text-sm text-gray-600">
-            Não tem uma conta?{" "}
+            Já tem uma conta?{" "}
             <a
               href="#signup"
               onClick={toggleForm}
               className="text-blue-500 hover:underline"
             >
-              Cadastre-se
+              Login
             </a>
           </p>
         </div>
@@ -117,4 +129,4 @@ const LoginForm: React.FC = () => {
   );
 };
 
-export default LoginForm;
+export default RegisterForm;

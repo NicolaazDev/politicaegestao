@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+
 import "../styles/globals.css";
+
+import { FormProvider } from "@/context/formContext";
 
 export const metadata: Metadata = {
   title: "Politica & Gestão",
@@ -13,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="font-poppinsLight">{children}</body>
+      <body className="font-poppinsLight">
+        <FormProvider>{children}</FormProvider>
+      </body>
     </html>
   );
 }

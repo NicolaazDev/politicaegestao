@@ -72,7 +72,11 @@
   /* Formulario Design */
 
   .input-field {
-    @apply w-full my-3;
+    @apply w-full my-3 center-col !items-start;
+
+    label {
+      @apply text-start;
+    }
 
     input {
       @apply h-[55px] border border-solid border-gray-100 outline-none pl-1;

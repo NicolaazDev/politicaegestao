@@ -7,7 +7,7 @@ const Stats: React.FC = () => {
   return (
     <section className="w-full bg-background z-[9999] relative py-12 border border-transparent border-solid border-y-gray-300">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-3 gap-8 text-center sm:grid-cols-1">
           <div className="bg-white p-2">
             <h3 className="text-4xl font-bold mb-2">
               <CountUp
@@ -25,7 +25,7 @@ const Stats: React.FC = () => {
             <p className="text-gray-600">Usuários</p>
           </div>
 
-          <div className="bg-white p-2 border border-transparent border-x-gray-400 border-solid">
+          <div className="bg-white p-2 border border-transparent border-x-gray-400 border-solid sm:border-transparent">
             <h3 className="text-4xl font-bold mb-2">
               <CountUp
                 start={0}
