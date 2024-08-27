@@ -27,7 +27,7 @@ export default function Free() {
               onClick={handleScroll}
               className="bg-primary h-[55px] whitespace-nowrap border border-solid border-primary text-center text-white font-poppinsLight py-2 px-4 rounded hover:bg-transparent hover:border-background hover:text-background transition-all sm:w-full"
             >
-              Começe gratuitamente
+              Comece agora
             </button>
             {/* <button
               onClick={handleScroll}

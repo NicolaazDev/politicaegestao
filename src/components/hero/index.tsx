@@ -33,9 +33,9 @@ const Hero: React.FC = () => {
     <section className="center min-h-[115vh] bg-[#000000] relative overflow-hidden">
       <img
         ref={bgRef}
-        src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sindicalistas_fazem_manifesta%C3%A7%C3%A3o%2C_em_frente_ao_Congresso_Nacional%2817070575821%29.jpg"
+        src="https://live.staticflickr.com/7597/16837356331_170baa35bd_b.jpg"
         alt=""
-        className="h-[100%] w-[100vw] object-cover absolute bottom-0 object-[0%_10%] scale-x-[-1] left-0 z-[0] opacity-40 grayscale"
+        className="h-[100%] w-[100vw] object-cover absolute bottom-0 object-[0%_10%]  left-0 z-[0] opacity-40 grayscale"
       />
       <Header />
       <div className="max-w-screen-2xl px-4 center z-10 !justify-between w-full sm:center-col sm:text-center sm:px-4 sm:py-[80px]">

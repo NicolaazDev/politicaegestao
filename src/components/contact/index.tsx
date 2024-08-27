@@ -26,9 +26,9 @@ export const Contact: React.FC = () => {
     <section className="contact-section text-background py-20 relative overflow-hidden">
       <img
         ref={bgRef}
-        src="https://cdn.pixabay.com/photo/2021/03/27/18/16/riot-6129239_1280.jpg"
+        src="https://live.staticflickr.com/8712/16218469613_d7bb25ca49_b.jpg"
         alt=""
-        className="h-[150%] w-[100vw] object-cover object-[0%_70%] absolute bottom-0 scale-x-[-1] left-0 z-[0] opacity-30 sm:h-[200%]"
+        className="h-[150%] w-[100vw] object-cover object-[0%_40%] absolute bottom-0 scale-x-[-1] left-0 z-[0] opacity-30 sm:h-[200%]"
       />
       <div className="max-w-screen-2xl z-50 mx-auto center flex flex-col items-center space-y-12">
         <h2 className="text-5xl font-bold text-center mb-6 z-50 sm:max-w-[95%]">
