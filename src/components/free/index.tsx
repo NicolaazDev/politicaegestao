@@ -14,10 +14,10 @@ export default function Free() {
         <div className="text-center center !justify-between w-full sm:center-col">
           <div>
             <h2 className="text-5xl title-gradient uppercase text-start leading-[1] font-poppinsExtraBold font-bold sm:text-center sm:text-3xl">
-              Superando as <br className="sm:hidden" /> metas com estratégica.
+              SUPERE SUAS <br className="sm:hidden" /> METAS COM ESTRATÉGIA.
             </h2>
             <p className="text-[18px] font-poppinsLight mt-4 text-background">
-              Crie uma conta gratuitamente e tenha acesso a todas as
+              É gratuito! Crie sua conta agora e tenha acesso a todas as
               funcionalidades.
             </p>
           </div>
@@ -29,12 +29,12 @@ export default function Free() {
             >
               Começe gratuitamente
             </button>
-            <button
+            {/* <button
               onClick={handleScroll}
               className="border border-solid border-primary bg-transparent h-[55px] whitespace-nowrap text-center text-primary font-poppinsLight py-2 px-4 rounded hover:bg-primary hover:text-background transition-all sm:w-full"
             >
               Acesse um demonstração
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

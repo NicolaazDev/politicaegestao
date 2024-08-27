@@ -26,18 +26,17 @@ export const Contact: React.FC = () => {
     <section className="contact-section text-background py-20 relative overflow-hidden">
       <img
         ref={bgRef}
-        src="https://images.unsplash.com/photo-1518334792104-db78a16ac8b8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGV0YWxoZSUyMGRvJTIwZWRpZiVDMyVBRGNpb3xlbnwwfHwwfHx8MA%3D%3D"
+        src="https://cdn.pixabay.com/photo/2021/03/27/18/16/riot-6129239_1280.jpg"
         alt=""
-        className="h-[150%] w-[100vw] object-cover absolute bottom-0 scale-x-[-1] left-0 z-[0] opacity-30 sm:h-[200%]"
+        className="h-[150%] w-[100vw] object-cover object-[0%_70%] absolute bottom-0 scale-x-[-1] left-0 z-[0] opacity-30 sm:h-[200%]"
       />
       <div className="max-w-screen-2xl z-50 mx-auto center flex flex-col items-center space-y-12">
         <h2 className="text-5xl font-bold text-center mb-6 z-50 sm:max-w-[95%]">
           Contribua com o Política & Gestão
         </h2>
         <p className="text-lg text-center max-w-3xl z-50 sm:max-w-[90%]">
-          Tem alguma dúvida, sugestão ou precisa de ajuda? Nossa equipe de
-          suporte está sempre disponível para ajudar. Não hesite em entrar em
-          contato conosco.
+          Tem alguma dúvida, sugestão ou precisa de ajuda? Estamos disponíveis
+          para ajudar.
         </p>
 
         <div className="text-center z-50">

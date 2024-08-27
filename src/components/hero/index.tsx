@@ -30,12 +30,12 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="center min-h-[120vh] bg-[#111111] relative overflow-hidden">
+    <section className="center min-h-[115vh] bg-[#000000] relative overflow-hidden">
       <img
         ref={bgRef}
-        src="https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?cs=srgb&dl=pexels-essow-k-251295-936722.jpg&fm=jpg"
+        src="https://mtst.org/wp-content/uploads/2018/08/39454499_1131092187041331_5905321882990673920_o.jpg"
         alt=""
-        className="h-[100%] w-[100vw] object-cover absolute bottom-0 scale-x-[-1] left-0 z-[0] opacity-40"
+        className="h-[100%] w-[100vw] object-cover absolute bottom-0 scale-x-[-1] left-0 z-[0] opacity-40 grayscale"
       />
       <Header />
       <div className="max-w-screen-2xl px-4 center z-10 !justify-between w-full sm:center-col sm:text-center sm:px-4 sm:py-[80px]">
