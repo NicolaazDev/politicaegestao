@@ -17,7 +17,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767049/imagem_2024-08-27_105727336_med1qk.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724780062/gerenciamento_contatos_dhtqpy.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover sm:w-[86%]"
           />
@@ -36,7 +36,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767106/imagem_2024-08-27_105824475_sj2xfa.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724780062/agenda_do_candidato_yccywh.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover sm:w-[86%]"
           />
@@ -55,7 +55,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767126/imagem_2024-08-27_105844290_ixie83.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724780062/atendimento_a_popula%C3%A7%C3%A3o_pnbuc6.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover sm:w-[86%]"
           />
@@ -74,7 +74,7 @@ export const Funcionalidades: React.FC = () => {
             </p>
           </div>
           <img
-            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724767157/imagem_2024-08-27_105915628_mvcnq0.png"
+            src="https://res.cloudinary.com/dmceve2cp/image/upload/v1724780062/financeiro_fwuaez.png"
             alt=""
             className="w-[40%] h-auto rounded-[12px] object-cover sm:w-[86%]"
           />
