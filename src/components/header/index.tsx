@@ -2,7 +2,7 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-transparent fixed top-0 text-foreground w-full center h-[80px]">
+    <header className="bg-transparent absolute top-0 text-foreground w-full center h-[80px]">
       <div className="center !justify-between max-w-screen-2xl w-full">
         <nav className="flex space-x-6 ">
           <a
