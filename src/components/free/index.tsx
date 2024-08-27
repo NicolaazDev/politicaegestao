@@ -9,7 +9,7 @@ export default function Free() {
   };
 
   return (
-    <section id="pricing" className="center py-20 relative bg-background">
+    <section id="pricing" className="center py-20 relative bg-background px-4">
       <div className="max-w-screen-2xl center w-full bg-[#111111] rounded-lg py-10 px-7 sm:w-[90%]">
         <div className="text-center center !justify-between w-full sm:center-col">
           <div>

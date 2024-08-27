@@ -20,7 +20,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-transparent absolute top-0 text-foreground w-full center h-[80px]">
+    <header className="bg-transparent absolute top-0 text-foreground w-full center h-[80px] px-4">
       <div className="center !justify-between max-w-screen-2xl w-full">
         <div className="sm:flex hidden">
           <button
@@ -32,6 +32,13 @@ const Header: React.FC = () => {
         </div>
 
         <nav className={`center space-x-6 text-white sm:hidden`}>
+          <a
+            href="#inicio"
+            onClick={(e) => handleScroll(e, "features")}
+            className="hover:border-b-background border border-solid border-transparent transition-all"
+          >
+            Inicio
+          </a>
           <a
             href="#features"
             onClick={(e) => handleScroll(e, "features")}
