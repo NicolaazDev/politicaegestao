@@ -5,6 +5,79 @@
 @import "./fonts.css";
 @import "./colors.css";
 
+@layer utilities {
+  .center {
+    @apply flex items-center justify-center;
+  }
+
+  .center-col {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .text-gradient {
+    background: radial-gradient(circle, var(--primary), var(--ring));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+  .title-gradient {
+    background: radial-gradient(circle, #3dc8ff, #6a91fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .secondarytext-gradient {
+    background: radial-gradient(
+      circle,
+      var(--popover-foreground),
+      var(--foreground)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .main-gradient {
+    background: radial-gradient(
+      circle,
+      var(--primary-foreground),
+      var(--primary)
+    );
+  }
+
+  .secondary-gradient {
+    background: radial-gradient(
+      circle,
+      var(--popover-foreground),
+      var(--foreground)
+    );
+  }
+
+  .main-button {
+    @apply bg-primary text-white h-[55px] px-5 py-2 rounded-md w-full;
+  }
+
+  /* Formulario Design */
+
+  .input-field {
+    @apply w-full my-3;
+
+    input {
+      @apply h-[55px] border border-solid border-gray-100 outline-none pl-1;
+    }
+
+    .error-label {
+      @apply text-red-500 text-[14px] font-poppinsLight mt-1;
+    }
+  }
+}
+
 @layer base {
   * {
     margin: 0;
@@ -19,38 +92,16 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  body {
-    line-height: 1;
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 0.5rem;
   }
 
-  ol,
-  ul {
-    list-style: none;
+  ::-webkit-scrollbar-track {
+    background: transparent;
   }
 
-  blockquote,
-  q {
-    quotes: none;
-  }
-
-  blockquote:before,
-  blockquote:after,
-  q:before,
-  q:after {
-    content: "";
-    content: none;
-  }
-
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: "Poppins", sans-serif;
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--foreground);
   }
 }
