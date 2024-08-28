@@ -40,10 +40,10 @@ const Hero: React.FC = () => {
       <Header />
       <div className="max-w-screen-2xl px-4 center z-10 !justify-between w-full sm:center-col sm:text-center sm:px-4 sm:py-[80px]">
         <div className="">
-          <h1 className="text-[65px] title-gradient uppercase leading-[1] w-auto font-poppinsExtraBold font-bold mb-4 sm:text-[44px]">
+          <h1 className="text-[55px] title-gradient uppercase leading-[1] w-auto font-poppinsExtraBold font-bold mb-4 sm:text-[44px]">
             Um software online <br /> de gestão política
           </h1>
-          <p className="text-2xl mb-6 text-background sm:text-[22px]">
+          <p className="text-xl mb-6 text-background sm:text-[22px]">
             Eleve seu desempenho eleitoral a um novo nível{" "}
             <br className="sm:hidden" />
             gestão estratégica para{" "}
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
         {isRegister ? (
           <motion.div
             key="register"
-            className="w-[40%] sm:w-full"
+            className="w-[38%] sm:w-full"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
         ) : (
           <motion.div
             key="login"
-            className="w-[40%] sm:w-full"
+            className="w-[38%] sm:w-full"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}

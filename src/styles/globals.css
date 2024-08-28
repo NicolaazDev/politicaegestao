@@ -70,7 +70,7 @@
   }
 
   .main-button {
-    @apply bg-primary text-white h-[55px] px-5 py-2 rounded-md w-full;
+    @apply bg-primary text-white h-[40px] px-5 py-2 rounded-md w-full;
   }
 
   /* Formulario Design */
@@ -83,7 +83,7 @@
     }
 
     input {
-      @apply h-[55px] border border-solid border-gray-100 outline-none pl-1;
+      @apply h-[40px] border border-solid border-gray-100 outline-none pl-1;
     }
 
     .error-label {

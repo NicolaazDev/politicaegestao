@@ -90,11 +90,11 @@ const LoginForm: React.FC = () => {
         </div>
 
         <div className="my-4 text-center center !justify-between gap-x-2">
-          <button className="bg-red-600 h-[55px] hover:bg-red-700 transition-all w-full text-white font-bold py-2 px-4 rounded center space-x-2">
+          <button className="bg-red-600 h-[40px] hover:bg-red-700 transition-all w-full text-white font-bold py-2 px-4 rounded center space-x-2">
             <IoLogoGoogle size={24} />
             <span>Google</span>
           </button>
-          <button className="bg-blue-600 h-[55px] hover:bg-blue-700 transition-all w-full text-white font-bold py-2 px-4 rounded center space-x-2">
+          <button className="bg-blue-600 h-[40px] hover:bg-blue-700 transition-all w-full text-white font-bold py-2 px-4 rounded center space-x-2">
             <IoLogoFacebook size={24} />
             <span>Facebook</span>
           </button>
