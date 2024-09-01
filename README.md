@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Política & Gestão
 
-## Getting Started
+Política e Gestão é um site inovador destinado a políticos que desejam automatizar suas campanhas eleitorais e receber métricas detalhadas sobre o desempenho das campanhas. O projeto é desenvolvido com Next.js, PHP, Framer Motion e GSAP para oferecer uma experiência de usuário dinâmica e eficaz.
 
-First, run the development server:
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para construção de aplicações web.
+- **PHP**: Linguagem de programação para o backend e processamento de dados.
+- **Framer Motion**: Biblioteca para animações de React.
+- **GSAP**: Biblioteca para animações de alta performance.
+
+## Link de Deploy
+
+Você pode conferir a site ao vivo [Vps Deploy]([https://drone-shop-six.vercel.app](https://politicaegestao.com)).
+
+## Screenshots
+
+![Screenshot 1](https://res.cloudinary.com/dmceve2cp/image/upload/v1725157748/imagem_2024-08-31_232904570_t76akx.png)
+![Screenshot 2](https://res.cloudinary.com/dmceve2cp/image/upload/v1725157774/imagem_2024-08-31_232931679_ohpfu4.png)
+
+## Instalação
+
+Clone o repositório e instale as dependências:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/NicolaazDev/politicaegestao.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+cd drone-shop
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Desenvolvimento
 
-## Learn More
+Para iniciar o ambiente de desenvolvimento, execute:
 
-To learn more about Next.js, take a look at the following resources:
+```bash 
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Acesse `http://localhost:3000` no seu navegador para visualizar o projeto em desenvolvimento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Construção
 
-## Deploy on Vercel
+Para criar uma versão de produção do projeto, use:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
